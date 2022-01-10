@@ -37,12 +37,13 @@ const Profile = ({provider, loading, airDropHelper, walletConnectionHelper}) => 
 
 const App = () => {
 
-    const TOKEN_DETAILS = {
-        publicKey: 'HL7nuJxpKj5crCkLQ8pcxmGLkvBYaynQ1jkW5Tv2C1hV',
-        secretKey: '{"0":167,"1":40,"2":241,"3":32,"4":136,"5":226,"6":76,"7":21,"8":125,"9":72,"10":231,"11":238,"12":18,"13":248,"14":93,"15":193,"16":254,"17":188,"18":91,"19":180,"20":242,"21":227,"22":104,"23":105,"24":237,"25":108,"26":6,"27":189,"28":146,"29":92,"30":141,"31":61,"32":66,"33":218,"34":201,"35":39,"36":154,"37":93,"38":157,"39":160,"40":162,"41":125,"42":227,"43":151,"44":173,"45":191,"46":95,"47":244,"48":155,"49":239,"50":243,"51":52,"52":60,"53":91,"54":104,"55":75,"56":7,"57":6,"58":3,"59":158,"60":116,"61":58,"62":231,"63":104}'
-    };
 
-    const loadFromTokenDetails = true;
+    const loadFromTokenDetails = false; // if true, set keys in TOKEN_DETAILS 
+
+    const TOKEN_DETAILS = {
+        publicKey: '<place_public_key>',
+        secretKey: '<place_secretkey_with_which_miniting_wallet_was_created>'
+    };
 
     useEffect(() => {
         // takes an object of css variable key-value pairs
